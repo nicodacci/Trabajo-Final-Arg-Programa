@@ -1,0 +1,66 @@
+/*
+uso de variables para poder cambiar desde aquí todo y no tener que cambiar en cada sección
+*/
+:root{
+    --color_barra_navegacion: rgb(178, 178, 178);
+    --color_tema: white;
+    --color_texto: black;
+    --color_texto_secundario: rgb(40, 57, 142);
+    --color_disp_movil: rgb(128, 128, 128);
+    --color_texto_invertido: white;
+}
+
+body{
+    padding-top: 100px;
+    font-family: 'Open Sans', sans-serif;/*uso de fuentes*/
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+    background-color: var(--color_tema);/*le asigno el valor de la variable*/
+    color:  var(--color_texto);
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;/*saco el subrayado*/
+    color:  var(--color_texto);
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+ul{
+    margin-top: 5px;
+}
+
+.educacion li{
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.educacion p{
+    margin-bottom: 5px;
+}
+
+.experiencia_laboral li{
+    font-style: italic;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.experiencia_laboral p{
+    font-weight: 100;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+
+.ver_mas{
+    font-weight: 600;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nicolás Diego Dacci</title>
+
+<!-- links a google.fonts -->    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,400;1,500&family=Oswald:wght@500&family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- links propios -->
+    <link rel="icon" type="image/x-icon" href="/imagenes/icono.png">
+    <link rel="stylesheet" href="/CSS/main.css"><!-- primero cargo el main -->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<header class="header">
+    <nav class="nav">
+        <a href="#" class="logotipo">
+            <img height="80" width="80" src="/imagenes/foto_cv_arg_progr.jpg" alt="Imagen del titular del cv">
+            <div id="nombre">Pablo Gimenez</div>
+        </a>
+
+        <ul class="menu">
+            <li><a href="#mi_perfil">Mi perfil</a></li>
+            <li><a href="#experiencia_laboral">Experiencia laboral</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    
+    <div id="mi_perfil">
+        <a name="mi_perfil"></a>
+        <h2>Miperfil</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid unde inventore facere accusamus earum
+            nisi, exercitationem ex nostrum qui assumenda neque nesciunt enim ullam facilis rerum deserunt dolore quidem
+            ducimus.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolor ipsa harum qui, ut culpa. Laborum illo tempora, ullam corporis mollitia, expedita recusandae molestiae velit distinctio labore odio voluptates ex?
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+        </p>
+    </div>
+
+    <div>
+        <a name="educación"></a>
+        <h2>Educación</h2>
+
+        <ul class="educacion">
+            <li>Primaria</li>
+                <p>Escuela nacional San Martín.</p>
+            <li>Primaria</li>
+                <p>Escuela nacional San Martín.</p>
+            <li>Primaria</li>
+                <p>Escuela nacional San Martín.</p>
+        </ul>
+    </div>
+
+    <div>
+        <a name="experiencia_laboral"></a>
+        <h2>Experiencia laboral</h2>
+
+        <ul class="experiencia_laboral">
+
+            <li>1994-1996 Taller mecanico. <span class="ver_mas" >Ver más..</span>  
+                <p class="experiencia" style="display: none;">sfdsfsfsf</p>
+            </li>
+            <li>1994-1996 CITES. <span class="ver_mas" >Ver más..</span>
+                <p class="experiencia" style="display: none;">QWSQSWQSWQWD</p>
+            </li>
+        </ul>
+    </div>
+
+    <div>
+        <a name="habilidades"></a>
+        <h2>Habilidades</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur labore ullam quas distinctio sequi in sit
+            at quam aliquam, eaque error doloribus temporibus quidem reiciendis enim unde laudantium esse voluptates?
+        </p>
+    </div>
+
+    <div>
+        <a name="contacto"></a>
+        <h2>Contacto</h2>
+        <p>pablogimenez@beta.com</p>
+        <a href="#formulario"><button id="contactame">Contáctame</button></a>
+        <a name="formulario"></a>
+            <form id="form" action="" style="display: none;">
+
+                <input class="dato" id="nombre_apellido" type="text" placeholder="Nombre y apellido">
+
+                <input class="dato" id="e-mail" type="email" placeholder="e-mail">
+            
+                <textarea class="box_consulta" id="consulta" cols="30"  rows="5" placeholder="Escribe tu consulta."></textarea>
+
+                <button id="btn_enviar">Enviar</button>
+            </form>
+    </div>
+
+    <script src="/JS/funcion_ver_mas.js"></script>
+    <script src="/JS/funcion_enviar_consulta.js"></script>
+</body>
+
+</html>

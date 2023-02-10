@@ -1,0 +1,146 @@
+/*estilos para escritorio*/
+.header{
+    position: fixed;/*queda fija al scrolear con respecto al viewport*/
+    background-color: var(--color_barra_navegacion);
+    left: 0;/*llevo margenes */
+    top: 0;/*al tope*/
+    width: 100%;/*que ocupe todo el ancho*/
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;/*dejo un espacio en el medio*/
+    padding: 10px;
+    max-width: 1000px;/*ancho maximo, despues de eso se centra*/
+    margin: 0 auto;/*0 arriba y abajo, automatico a los costados*/
+}
+
+/*logotipo*/
+.logotipo{
+    display: flex;
+    align-items: center; 
+    font-size: 25px;
+    color: var(--color_texto_secundario);
+    font-weight: 500;
+}
+
+.logotipo img{
+    border-radius: 50%; /*imagen redonda*/
+}
+
+#nombre{
+    padding: 10px;
+}
+
+/*menu*/
+.menu{  /*dentro de menu estan los li*/
+    display: flex;  /*los pongo uno al lado del otro*/
+    list-style: none;   /*saco las viñetas*/
+    margin: 0;  /*reseteo los margenes y padding*/
+    padding: 0;
+}
+
+.menu li{
+    padding: 0px 15px;
+}
+
+.menu a{
+    color: var(--color_texto);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 75px;/*alto de linea de texto para centrarlo horizontalmente*/
+    text-transform: uppercase;
+}
+
+form{
+    width: 100%;
+}
+
+.dato {
+    border: 2px solid rgb(247, 172, 172);
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    width: 50%;
+    display:flex;
+    flex-direction: row;
+}
+
+.box_consulta{
+    width: 50%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 1px;
+    margin: 2px;
+    display: flex;
+    white-space: initial;
+    min-height: 100px;
+
+}
+
+
+@media (max-width: 850px) {
+
+    body{
+        padding-top: 300px;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        max-width: 1000px;/*ancho maximo, despues de eso se centra*/
+        margin: 0 auto;/*0 arriba y abajo, automatico a los costados*/
+    }
+    
+    .menu{  
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
+        background-color: var(--color_disp_movil);
+        
+    }
+
+    .menu li{
+        padding: 0px;
+    }
+
+    .menu a{
+        color: var(--color_texto_invertido);
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 50px;
+        text-transform: uppercase;
+        padding: 1px;
+        margin: 0px;
+        
+    }
+
+    .form {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .box_consulta{
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 1px;
+        margin: 2px;
+        display: flex;
+        white-space: initial;
+        min-height: 100px;
+    }
+}
+
+
+
+
+
+
+
+
