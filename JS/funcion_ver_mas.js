@@ -11,7 +11,7 @@ for (let i = 0; i < 2; i++) {
     ver_mas[i].addEventListener("mouseleave", function(){
         setTimeout(() => {
             experiencia[i].style.display = "none"
-        }, 5000);
+        }, 7000);
         })
 }
 

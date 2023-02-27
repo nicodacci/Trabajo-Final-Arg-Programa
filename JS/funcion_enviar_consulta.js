@@ -27,11 +27,11 @@ function enviar_consulta(){
         alert("Su consulta fue enviada")
         btn_contacto.style.display = "block"
         formulario.style.display = "none"
+        nombre_apellido.value=""
+        e_mail.value=""
+        consulta.value=""
     } else {alert("Complete los campos requeridos..")}
 
-    nombre_apellido.value=""
-    e_mail.value=""
-    consulta.value=""
 }
 
 function formulario_completo(){
